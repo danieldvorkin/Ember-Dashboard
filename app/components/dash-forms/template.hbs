@@ -1,7 +1,7 @@
 <div style="background-color:#f6f6f6; padding:6px; margin:10px; font-size:85%;">
   <div style="display:inline-block; text-transform: uppercase;">Forms</div>
   <div style="display:inline-block;text-transform:uppercase;color:#1b73d5;float:right;">
-  	<a href="#" style="color:#1b73d5; " {{action 'compAddForm'}}>Add New</a>  |  
+  	<a class="formsModal" style="color:#1b73d5;cursor:pointer;">Add New</a>  |  
   	<a href="#" style="color:#1b73d5; "> Delete</a>
   </div>
 </div>
@@ -20,3 +20,13 @@
 		{{/each}}
 	</div>
 </div>
+
+{{forms-modal compAction='compAddForm'}}
+
+<script>
+  $(document).ready(function(){
+    $(".formsModal").click(function(){
+        $("#formsModal").modal({backdrop: 'static'});
+    });
+  });
+</script>

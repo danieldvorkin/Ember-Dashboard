@@ -5,8 +5,8 @@ export default Ember.Component.extend({
 		return this.get('forms-property');
 	}.property(),
 	actions: {
-		compAddForm: function(){
-			this.sendAction('addNewAction');
+		compAddForm: function(obj){
+			this.sendAction('addNewAction', obj);
 		}
 	}
 });

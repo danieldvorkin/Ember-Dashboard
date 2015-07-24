@@ -20,18 +20,15 @@ export default Ember.Controller.extend({
 	actions: {
 		addNewNews: function(news){
 			this.store.createRecord('news', news);
-			this.save();
 		},
-		addNewForm: function(){
-			console.log("Forms Add Button Works!!!");
+		addNewForm: function(form){
+			this.store.createRecord('form', form);
 		},
 		addNewDoc: function(document){
 			this.store.createRecord('document', document);
-			this.save();
 		},
 		addNewContact: function(contact){
 			this.store.createRecord('contact', contact);
-			this.save();
 		}
 	}
 });
