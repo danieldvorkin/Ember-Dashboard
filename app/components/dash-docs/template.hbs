@@ -1,0 +1,19 @@
+<div style="background-color:#f6f6f6; padding:6px; margin:10px; font-size:85%;">
+	<div style="display:inline-block; text-transform: uppercase;">Documents</div>
+	<div style="display:inline-block;text-transform:uppercase;color:#1b73d5;float:right;">
+		<a href="#" style="color:#1b73d5; " {{action 'compAddDoc'}}>Add New</a>  |  
+		<a href="#" style="color:#1b73d5; "> Delete</a>
+	</div>
+</div>
+<div style="height:150px; overflow-y: auto;">
+	<div style="padding:6px; margin:10px;font-size:80%;">
+		{{#each componentDocs as |doc|}}
+			<a href="#">
+  			<div style="display:inline-block; color:#1b73d5;">
+  				<strong>{{doc.fileName}}</strong> 
+  			</div>
+			</a>
+			<div style="display:inline-block;"> - {{doc.fileType}} - {{doc.fileSize}}.MB</div><br>
+		{{/each}}
+	</div>
+</div>

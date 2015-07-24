@@ -1,0 +1,547 @@
+﻿@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzBa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxoUt79146ZFaIJxILcpzmhI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBtIh4imgI8P11RFo6YPCPC0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+
+.ToggleSearchBar {
+	 background-color:white;
+	 height:50px;
+	 display:block;
+	}
+
+	.BG_blueBar {
+	background-color:#0053a4;
+	 height:46px;
+	}
+
+
+.newToolbarIcon_Search{
+	background-image:url('../images/NavGray_search.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+ 
+}
+
+
+.newToolbarIcon_home{
+	background-image:url('../images/newToolbar_home_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+ 
+}
+.newToolbarIcon_timecard{
+	background-image:url('../images/newToolbar_timecard_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+ 
+}
+.newToolbarIcon_earnings{
+	background-image:url('../images/newToolbar_earning_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+.newToolbarIcon_calendar{
+	background-image:url('../images/newToolbar_calendar_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+.newToolbarIcon_timeoff{
+	background-image:url('../images/newToolbar_timeoff_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+.newToolbarIcon_benefits{
+	background-image:url('../images/newToolbar_benefits_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+.newToolbarIcon_profile{
+	background-image:url('../images/newToolbar_profile_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+.newToolbarIcon_employee{
+	background-image:url('../images/newToolbar_profile_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+.newToolbarIcon_documents{
+	background-image:url('../images/newToolbar_documents_icon.png'); background-repeat:no-repeat;
+	height:30px;
+	 width:30px;
+	 cursor:pointer;
+	 display:inline-block;
+}
+
+
+
+
+.newToolbarIcon_logout{
+	background-image:url('../images/newToolbar_logout_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	 cursor:pointer;
+	 display:inline-block;
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	    
+
+}
+.newToolbarIcon_logout:hover {
+	background-image:url('../images/newToolbar_logout_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	 display:inline-block;
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	   	cursor: pointer;
+	   	opacity:0.5;
+ 		filter:alpha(opacity=50); /* For IE8 and earlier */
+
+}
+.newToolbarIcon_messages{
+	background-image:url('../images/newToolbar_messages_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	 cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+
+}
+.newToolbarIcon_messages:hover{
+	background-image:url('../images/newToolbar_messages_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	 cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	 	opacity:0.5;
+ 		filter:alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+.newToolbarIcon_setting{
+	background-image:url('../images/newToolbar_setting_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	 cursor:pointer;
+	 display:inline-block;
+	  -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+
+}
+.newToolbarIcon_setting:hover {
+	background-image:url('../images/newToolbar_setting_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	  cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	 	opacity:0.5;
+ 		filter:alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+.newToolbarIcon_user{
+	background-image:url('../images/newToolbar_user_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	 cursor:pointer;
+	 display:inline-block;
+	  -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+
+}
+.newToolbarIcon_user:hover {
+	background-image:url('../images/newToolbar_user_icon.png'); background-repeat:no-repeat;
+	height:24px;
+	 width:24px;
+	cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	 	opacity:0.5;
+ 		filter:alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+.newToolbarIcon_blueLeft{
+	background-image:url('../images/NavBlue_leftArrow_icon.png'); background-repeat:no-repeat;
+	height:25px;
+	 width:25px;
+	 cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+
+}
+.newToolbarIcon_blueLeft:hover {
+	background-image:url('../images/NavBlue_leftArrow_icon.png'); background-repeat:no-repeat;
+	height:25px;
+	 width:25px;
+	 cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	 	opacity:0.5;
+ 		filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.newToolbarIcon_blueRight{
+	background-image:url('../images/NavBlue_rightArrow_icon.png'); background-repeat:no-repeat;
+	height:25px;
+	 width:25px;
+	 cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+
+}
+.newToolbarIcon_blueRight:hover {
+	background-image:url('../images/NavBlue_rightArrow_icon.png'); background-repeat:no-repeat;
+	height:25px;
+	 width:25px;
+	  cursor:pointer;
+	 display:inline-block;
+	 -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+	 	opacity:0.5;
+ 		filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.newToolbarIcon_whiteShevron{
+	background-image:url('../images/NavWhite_shevron_icon.png'); background-repeat:no-repeat;
+	height:25px;
+	 width:11px;
+	 cursor:pointer;
+	 display:inline-block;
+	 float:right;
+	 margin-top:10px;
+	 margin-right:5px;
+}
+
+
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 16px #bababa;
+   -webkit-box-shadow: inset 0 0 16px #bababa;
+   box-shadow:         inset 0 0 16px #bababa;
+}
+
+
+
+
+
+
+
+.toolbarFont_home {
+
+	font-size:18px;
+	color:#3483d1;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+	
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+.toolbarFont_timeCard {
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+	font-size:18px;
+	color:#0355b2;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_earnings{
+		 font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+	font-size:18px;
+	color:#f26522;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_calendar{
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+font-size:18px;
+	color:#24a933;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_timeoff{
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+
+	font-size:18px;
+	color:#19a0a9;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_benefits{
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+
+	font-size:18px;
+	color:#1387a9;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_profile{
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+
+	font-size:18px;
+	color:#1162d1;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_employee{
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+font-size:18px;
+	color:#1162d1;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_documents{
+ font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+
+	font-size:18px;
+	color:#13a8e6;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+.toolbarFont_messages{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-style: normal;
+  	font-weight: bold;
+ 	font-size:14px;
+	color:#FFF;
+	cursor:pointer;
+	margin-top: 3px;
+}
+
+.badge {
+	position:relative;
+	left:-13px;
+	font-family:Arial, Helvetica, sans-serif;
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 5px;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #00aeef;
+	border-radius: 25px;
+	border:2px solid #FFF;
+	cursor:pointer;
+}
+
+.toolbarFont_NavText{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-style: normal;
+  	font-weight: bold;
+ 	font-size:16px;
+	color:#fff;
+	display:inline-block;
+	cursor:pointer;
+	vertical-align:top;
+	margin-top: 3px;
+}
+
+.Toolbar_itam {
+	 display:inline-block;  padding-top:10px; padding-bottom:5px; padding-left:15px;padding-right:15px;
+	  -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+
+}
+.Toolbar_itam:hover {
+	   display:inline-block;  padding-top:10px; padding-bottom:5px; padding-left:15px;padding-right:15px;
+	   -moz-box-shadow:    inset 0 0 26px #dfdfdf;
+	   -webkit-box-shadow: inset 0 0 26px #dfdfdf;
+	   box-shadow:         inset 0 0 26px #dfdfdf;
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	    -webkit-user-select:none;
+	    -moz-user-select:none;
+	    -ms-user-select:none;
+	    user-select:none;
+
+
+}
+
+.menu_shedow {
+	-webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.18);
+box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.18);
+}
+.toolbar_shedow {
+	-webkit-box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.28);
+-moz-box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.28);
+box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.28);
+}
+
+
+
+
+
+
+
+
+

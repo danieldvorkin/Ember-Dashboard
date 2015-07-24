@@ -1,0 +1,15 @@
+<div style="background-color:#f6f6f6; padding:6px; margin:10px; font-size:85%;">
+	<div style="display:inline-block; text-transform: uppercase;">NEWS</div>
+	<div style="display:inline-block; text-transform: uppercase; float:right;">
+		<a href="#" style="color:#1b73d5; "{{action 'compAddNews'}}>Add New</a>  |  
+		<a href="#" style="color:#1b73d5; "> Delete</a>
+	</div>
+</div>
+
+<div style="height:200px; overflow-y: auto;">
+	<div style="padding:6px; margin:10px;font-size:75%;">
+		{{#each componentNews as |item|}}
+			<strong>{{item.date}}</strong> {{item.content}} <hr />
+		{{/each}}
+	</div>
+</div>

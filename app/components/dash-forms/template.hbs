@@ -1,0 +1,22 @@
+<div style="background-color:#f6f6f6; padding:6px; margin:10px; font-size:85%;">
+  <div style="display:inline-block; text-transform: uppercase;">Forms</div>
+  <div style="display:inline-block;text-transform:uppercase;color:#1b73d5;float:right;">
+  	<a href="#" style="color:#1b73d5; " {{action 'compAddForm'}}>Add New</a>  |  
+  	<a href="#" style="color:#1b73d5; "> Delete</a>
+  </div>
+</div>
+<div style="height:200px; overflow-y: auto;">
+	<div style="padding:6px; margin:10px;font-size:75%;">
+		{{#each componentForms as |form|}}
+  		<a href="#">
+  			<div style="display:inline-block; vertical-align: top; color:#1b73d5;">
+  				<strong>{{form.title}}</strong>
+  			</div>
+  		</a>
+  		<div style="display:inline-block;">
+  			{{form.details}}
+  		</div>
+  		<hr />
+		{{/each}}
+	</div>
+</div>

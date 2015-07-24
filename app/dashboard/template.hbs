@@ -1,0 +1,32 @@
+<div class="container" >
+  {{dashboard-navbar}}    
+  <header style="margin-top:60px; background-color:#fafafa; margin-bottom:100px;">
+    <div>
+      
+      <div class="cont50">
+      	<div style="padding:12px; margin:0px; border-bottom:1px solid #cccccc;">My Content</div>
+      	<div>
+          {{dash-news news-property=news addNewAction='addNewNews'}}
+          {{dash-docs docs-property=documents addNewAction='addNewDoc'}}
+      	</div>
+      </div>
+      
+      <div class="cont50" style="vertical-align: top;">
+        {{dash-contacts contacts-property=contacts addNewAction='addNewContact'}}
+        {{dash-forms forms-property=forms addNewAction='addNewForm'}}
+  		</div>
+
+		</div>
+	</header>
+  {{dashboard-footer}}
+</div>
+
+{{contact-modal}}
+
+<script>
+  $(document).ready(function(){
+    $(".contactModal").click(function(){
+        $("#contactModal").modal({backdrop: 'static'});
+    });
+  });
+</script>

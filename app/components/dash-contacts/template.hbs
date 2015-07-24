@@ -1,0 +1,25 @@
+<div style="display:inline-block;padding:15px;width:100%;background-color:#fff;border-bottom:1px solid #cccccc;">
+  <div>
+    <div style="display:inline-block; vertical-align: top; text-transform: uppercase;"> Contacts</div>
+    <div style="display:inline-block; vertical-align: top; text-transform: uppercase; color:#1b73d5; float:right;">
+    	<a><span class="contactModal" style="color:#1b73d5; font-size:85%;" {{action 'compAddContact'}}>
+        Add New
+      </span></a>  
+      |  
+    	<a href="#" style="color:#1b73d5; font-size:85%;"> Delete</a>
+    </div>
+  </div>
+</div>
+<div>
+	<div style="height:192px; overflow-y: auto;">
+  	<div style="padding:6px; margin:10px;font-size:85%;">
+  		{{#each componentContacts as |contact|}}
+  			<strong>{{contact.name}}</strong>
+  			<span style="font-size:80%;">
+  				{{contact.address}}, Phone: {{contact.phone}}
+  			</span>
+  			<hr />
+  		{{/each}}
+  	</div>
+  </div>
+</div>

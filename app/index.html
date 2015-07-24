@@ -1,24 +1,66 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Google Nexus Website Menu</title>
+    
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/dashboard.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/foundation-5.5.2/css/foundation.css" />
+    <script src="assets/foundation-5.5.2/js/vendor/modernizr.js"></script>
 
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <script src="assets/js/modernizr.custom.js"></script>
+    
     {{content-for 'head-footer'}}
+    
+    <style type="text/css">
+    .auto-style1 {
+      width: 80px;
+      height: 80px;
+      -moz-border-radius: 60px;
+      -webkit-border-radius: 60px;
+      border-radius: 60px;
+      border: 2px solid #1b73d5;
+      text-align: center;
+    }
+    .auto-style2 {
+      text-align: center;
+    }
+    </style>
   </head>
-  <body>
+  <body style="background-color:#fafafa; ">
+    
     {{content-for 'body'}}
-
+    
     <script src="assets/vendor.js"></script>
     <script src="assets/dashboard.js"></script>
+    <script src="assets/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    
+    
+    <script src="assets/foundation-5.5.2/js/vendor/jquery.js"></script>
+    <script src="assets/foundation-5.5.2/js/foundation.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/gnmenu.js"></script>
+
+    <script>
+      $(document).foundation();
+      
+      new gnMenu( document.getElementById( 'gn-menu' ) );
+    </script>
 
     {{content-for 'body-footer'}}
   </body>
