@@ -1,53 +1,43 @@
-<ul id="gn-menu" class="gn-menu-main" >
-    <li class="gn-trigger" style="display:none;">
-    	<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-      <nav class="gn-menu-wrapper">
-        <div class="gn-scroller">
-          <ul class="gn-menu">
-            <li><a class="gn-icon gn-icon-download">Mail</a></li>
-            <li><a class="gn-icon gn-icon-illustrator">Chat</a></li>
-            <li><a class="gn-icon gn-icon-photoshop">EMR</a></li>
-            <li><a class="gn-icon gn-icon-help">Phone</a></li>
-            <li><a class="gn-icon gn-icon-cog">Settings</a></li>  
-          </ul>
-        </div><!-- /gn-scroller -->
-      </nav>
+<nav class="top-bar" data-topbar="" role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">
+        <img height="25" src="assets/images/textlogo2.png" width="98" style="margin-left: 20px;margin-top: 0px;">
+      </a></h1>
     </li>
-    <li>
-    	<img height="25" src="assets/images/textlogo2.png" width="98" style="margin-left: 20px;margin-top: 0px;">
-    </li>
-    <li></li>
-    <li>
-      <div>
-        <div class="circleAvatar " style="display:inline-block;">
-        	<span style="top: -20px;position: relative;left: -5px;font-size: 130%;font-weight: bold;">	SA
-        	</span>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>        
+            
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+     <li class="has-form">
+      <div class="row collapse">
+        <div class="large-8 small-9 columns">
+          <input type="text" placeholder="Search for people, groups and conversations">
         </div>
-        <div style="position:absolute; top:1px; font-size: 113%;  font-weight: bold; right:90px; display:inline-block;">
-        	<a href="/dashboard" data-reveal-id="myModal">
-        		<span style=" color:#FFF;">Super, Admin</span>
-        	</a>
+        <div class="large-4 small-3 columns">
+          <a href="#" class="alert button expand" style="left: 0px; ">Search</a>
         </div>
-        <div id="myModal" class="reveal-modal" data-reveal  aria-hidden="true" role="dialog" style=" position:fixed; top:60px; right:0px; left: inherit; width:250px; height:250px;">
-          <div style="position:relative;">
-            <div style="display:block; ">
-              <label ><a href="#" aria-label="Close" style="font-size:14px; margin-bottom:22px; color:#1162c2;">Profile</a></label>
-              <br>                    
-            </div>
-            <div style="display:block; top:40px;">
-              <a href="http://live6.pariscribe.com/OrbCare/help.html" data-reveal-ajax="true" aria-label="Close" style="font-size:14px; margin-bottom:12px; color:#1162c2;"><label style="display:block; color:#1162c2;">Help</label></a>
-              <br>
-            </div>
-            <div style="display:block;">
-              <hr style="display:block;">
-            </div>
-            <div style="display:block; ">
-              <a href="http://live6.pariscribe.com/OrbCare/index.html" data-reveal-ajax="true" aria-label="Close" style="font-size:12px; color:#1162c2; display:block; right:-11px;"> 
-              	<button style="background-color:#1b73d5; color:#fff; width:200px; text-align:center; ">Logout</button>
-              </a>
-            </div>  
-         	</div>        
-        </div>      
       </div>
     </li>
+    <li class="has-dropdown not-click">
+      <a href="#">Super, Admin</a>
+      <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Super, Admin</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Change Password</a></li>
+        <li><a href="#">Change Role</a></li>
+        <li><a href="http://live6.pariscribe.com/OrbCare/index.html">Logout</a></li>
+      </ul>
+    </li>
   </ul>
+
+  <!-- Left Nav Section -->
+  <ul class="left">
+    <li>
+      <a href="http://live6.pariscribe.com/OrbCare/help.html"><img src="assets/images/ic_Help.png" style="height: 23px; margin-right:10px; " width="23"></a>    
+      </li>
+    </ul>
+  </section>
+</nav>
