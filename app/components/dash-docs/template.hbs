@@ -1,7 +1,7 @@
 <div style="background-color:#f6f6f6; padding:6px; margin:10px; font-size:85%;">
 	<div style="display:inline-block; text-transform: uppercase;">Documents</div>
 	<div style="display:inline-block;text-transform:uppercase;color:#1b73d5;float:right;">
-		<a href="#" style="color:#1b73d5; " {{action 'compAddDoc'}}>Add New</a>  |  
+		<a class="documentModal" style="color:#1b73d5; ">Add New</a>  |  
 		<a href="#" style="color:#1b73d5; "> Delete</a>
 	</div>
 </div>
@@ -17,3 +17,13 @@
 		{{/each}}
 	</div>
 </div>
+
+{{document-modal compAction='compAddDoc'}}
+
+<script>
+  $(document).ready(function(){
+    $(".documentModal").click(function(){
+        $("#documentModal").modal({backdrop: 'static'});
+    });
+  });
+</script>

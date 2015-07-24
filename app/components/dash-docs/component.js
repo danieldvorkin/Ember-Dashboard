@@ -5,8 +5,8 @@ export default Ember.Component.extend({
 		return this.get('docs-property');
 	}.property(),
 	actions: {
-		compAddDoc: function(){
-			this.sendAction('addNewAction');
+		compAddDoc: function(obj){
+			this.sendAction('addNewAction', obj);
 		}
 	}
 });
