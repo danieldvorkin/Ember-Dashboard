@@ -27,9 +27,11 @@ export default Ember.Controller.extend({
 		addNewDoc: function(){
 			console.log("Documens Add Button Works!!!");
 		},
-		addNewContact: function(){
-			console.log("Contacts Add Button Works!!!");
+		addNewContact: function(contact){
+			this.store.createRecord('contact', contact);
+			this.save();
 			//this is where createRecord happens
+
 		}
 	}
 });

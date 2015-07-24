@@ -1,10 +1,8 @@
 <div style="display:inline-block;padding:15px;width:100%;background-color:#fff;border-bottom:1px solid #cccccc;">
   <div>
     <div style="display:inline-block; vertical-align: top; text-transform: uppercase;"> Contacts</div>
-    <div style="display:inline-block; vertical-align: top; text-transform: uppercase; color:#1b73d5; float:right;">
-    	<a><span class="contactModal" style="color:#1b73d5; font-size:85%;" {{action 'compAddContact'}}>
-        Add New
-      </span></a>  
+    <div style="display:inline-block;vertical-align:top;text-transform:uppercase;color:#1b73d5;float:right;">
+    	<a class="contactModal" style="color:#1b73d5;font-size:85%;">Add New</a>
       |  
     	<a href="#" style="color:#1b73d5; font-size:85%;"> Delete</a>
     </div>
@@ -23,3 +21,13 @@
   	</div>
   </div>
 </div>
+
+{{contact-modal compAction='compAddContact'}}
+
+<script>
+  $(document).ready(function(){
+    $(".contactModal").click(function(){
+        $("#contactModal").modal({backdrop: 'static'});
+    });
+  });
+</script>

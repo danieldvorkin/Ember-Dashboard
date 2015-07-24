@@ -5,8 +5,8 @@ export default Ember.Component.extend({
 		return this.get('contacts-property');
 	}.property(),
 	actions: {
-		compAddContact: function(){
-			this.sendAction('addNewAction');
+		compAddContact: function(obj){
+			this.sendAction('addNewAction', obj);
 		}
 	}
 });

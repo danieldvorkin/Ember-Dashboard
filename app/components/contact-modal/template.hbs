@@ -10,10 +10,25 @@
           <h4 class="modal-title">Add New Contact</h4>
         </div>
         <div class="modal-body">
-          <p>Add new contact here</p>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              {{input class="form-control" id="name" placeholder="Full name goes here" value=name}}
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              {{input class="form-control" id="address" placeholder="Address goes here" value=address}}
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              {{input class="form-control" id="phone" placeholder="Phone Number goes here" value=phone}}
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary" data-dismiss="modal" >Submit</button>
+          <button type="submit" {{action 'submitEntry'}} class="btn btn-primary" data-dismiss="modal">
+            Submit
+          </button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
       </div>

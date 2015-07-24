@@ -1,43 +1,40 @@
-<nav class="top-bar" data-topbar="" role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">
+<nav class="navbar navbar-default" style="background-color: #a146e7;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
         <img height="25" src="assets/images/textlogo2.png" width="98" style="margin-left: 20px;margin-top: 0px;">
-      </a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>        
-            
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-     <li class="has-form">
-      <div class="row collapse">
-        <div class="large-8 small-9 columns">
-          <input type="text" placeholder="Search for people, groups and conversations">
-        </div>
-        <div class="large-4 small-3 columns">
-          <a href="#" class="alert button expand" style="left: 0px; ">Search</a>
-        </div>
-      </div>
-    </li>
-    <li class="has-dropdown not-click">
-      <a href="#">Super, Admin</a>
-      <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Super, Admin</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Change Password</a></li>
-        <li><a href="#">Change Role</a></li>
-        <li><a href="http://live6.pariscribe.com/OrbCare/index.html">Logout</a></li>
-      </ul>
-    </li>
-  </ul>
+      </a>
+    </div>
 
-  <!-- Left Nav Section -->
-  <ul class="left">
-    <li>
-      <a href="http://live6.pariscribe.com/OrbCare/help.html"><img src="assets/images/ic_Help.png" style="height: 23px; margin-right:10px; " width="23"></a>    
-      </li>
-    </ul>
-  </section>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li style="background-color:#a146e7;">
+          <a href="http://live6.pariscribe.com/OrbCare/help.html"><img src="assets/images/icHelp.png" style="height: 23px; margin-right:10px; " width="23"></a>    
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown {{if dropdownOpen 'open'}}" style="color:white;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" {{action 'toggleDropdown'}}>
+            Super, Admin<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" style="background-color:#a146e7;color:white;">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">Change Role</a></li>
+            <li class="divider"></li>
+            <li><a href="http://live6.pariscribe.com/OrbCare/index.html">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
