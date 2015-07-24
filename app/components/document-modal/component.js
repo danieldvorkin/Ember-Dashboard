@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 			var doc = {
 				fileName: this.get('fileName'),
 				fileType: this.get('fileType'),
-				fileType: this.get('fileSize')
+				fileSize: this.get('fileSize')
 			};
 			this.sendAction('compAction', doc);
 		}

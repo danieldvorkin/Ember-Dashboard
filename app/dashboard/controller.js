@@ -31,8 +31,6 @@ export default Ember.Controller.extend({
 		addNewContact: function(contact){
 			this.store.createRecord('contact', contact);
 			this.save();
-			//this is where createRecord happens
-
 		}
 	}
 });
