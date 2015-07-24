@@ -1,8 +1,8 @@
 <div style="background-color:#f6f6f6; padding:6px; margin:10px; font-size:85%;">
 	<div style="display:inline-block; text-transform: uppercase;">NEWS</div>
 	<div style="display:inline-block; text-transform: uppercase; float:right;">
-		<a href="#" style="color:#1b73d5; "{{action 'compAddNews'}}>Add New</a>  |  
-		<a href="#" style="color:#1b73d5; "> Delete</a>
+		<a class="newsModal" style="color:#1b73d5;">Add New</a>  |  
+		<a href="#" style="color:#1b73d5;"> Delete</a>
 	</div>
 </div>
 
@@ -13,3 +13,13 @@
 		{{/each}}
 	</div>
 </div>
+
+{{news-modal compAction='compAddNews'}}
+
+<script>
+  $(document).ready(function(){
+    $(".newsModal").click(function(){
+        $("#newsModal").modal({backdrop: 'static'});
+    });
+  });
+</script>

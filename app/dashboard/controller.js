@@ -18,8 +18,9 @@ export default Ember.Controller.extend({
 	}).property(),
 
 	actions: {
-		addNewNews: function(){
-			console.log("News Add Button Works!!!");
+		addNewNews: function(news){
+			this.store.createRecord('news', news);
+			this.save();
 		},
 		addNewForm: function(){
 			console.log("Forms Add Button Works!!!");
