@@ -15,14 +15,13 @@
     		{{#each componentContacts as |contact|}}
     			<strong>{{contact.name}}</strong>
     			<span style="font-size:80%;">
-    				{{contact.address}}, Phone: {{contact.phone}}
+    				{{contact.address}}, <br>Phone: {{contact.phone}}
     			</span>
     			<hr />
     		{{/each}}
     	</div>
     </div>
   </div>
-
 
 {{contact-modal compAction='compAddContact'}}
 
