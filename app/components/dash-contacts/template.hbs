@@ -1,4 +1,4 @@
-<div class="col-lg-6">
+
   <div style="display:inline-block;padding-left:0px;padding-right:0px;padding-top:15px;padding-bottom:15px;width:100%;background-color:#fff;border-bottom:1px solid #cccccc;">
     <div>
       <div style="display:inline-block; vertical-align: top; text-transform: uppercase;"> Contacts</div>
@@ -22,29 +22,8 @@
     	</div>
     </div>
   </div>
-</div>
-<div class="col-lg-6">
-  <div style="display:inline-block;padding-left:5px;padding-right:0px;padding-bottom:15px;padding-top:15px;width:100%;background-color:#fff;border-bottom:1px solid #cccccc;">
-    <div>
-      <div style="display:inline-block; vertical-align: top; text-transform: uppercase;"> Client Roster</div>
-      <div style="display:inline-block;vertical-align:top;text-transform:uppercase;color:#1b73d5;float:right;">
-        <a class="contactModal" style="color:#1b73d5;font-size:85%;cursor:pointer;">Add New</a>
-        |  
-        <a href="#" style="color:#1b73d5; font-size:85%;"> Delete</a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div style="height:192px; overflow-y: auto;">
-      <div style="padding:6px; margin:10px;font-size:85%;">
-        {{#each componentContacts as |contact|}}
-          <strong>{{contact.name}}</strong>
-          <hr />
-        {{/each}}
-      </div>
-    </div>
-  </div>
-</div>
+
+
 {{contact-modal compAction='compAddContact'}}
 
 <script>

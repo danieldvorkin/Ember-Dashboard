@@ -16,6 +16,10 @@ export default Ember.Controller.extend({
 	forms: (function(){
 		return this.store.find('form');
 	}).property(),
+	
+	rosters: (function(){
+		return this.store.find('roster');
+	}).property(),
 
 	actions: {
 		addNewNews: function(news){

@@ -12,7 +12,12 @@
       </div>
       
       <div class="cont50" style="vertical-align: top;">
-        {{dash-contacts contacts-property=contacts addNewAction='addNewContact'}}
+        <div class="col-lg-6" style="background-color:white;">
+          {{dash-contacts contacts-property=contacts addNewAction='addNewContact'}}
+        </div>
+        <div class="col-lg-6" style="background-color:white;">
+          {{dash-rosters rosters-property=rosters}}
+        </div>
         {{dash-forms forms-property=forms addNewAction='addNewForm'}}
   		</div>
 
