@@ -20,7 +20,12 @@ export default Ember.Route.extend({
 			});
 		},
 		addNewForm: function(form){
-			this.store.createRecord('form', form);
+			var newForm = this.store.createRecord('form', form);
+			newForm.save().then(function(){
+				console.log("Save Successful");
+			}, function(){
+				console.log("Save Failed!!!");
+			});
 		},
 		addNewDoc: function(document){
 			var newDoc = this.store.createRecord('document', document);
