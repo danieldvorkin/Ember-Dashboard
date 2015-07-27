@@ -3,11 +3,11 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 	model: function(){
 		return {
-			document: this.store.find('document'),
+			documents: this.store.find('document'),
 			news: this.store.find('news'),
-			form: this.store.find('form'),
-			contact: this.store.find('contact'),
-			roster: this.store.find('roster')
+			forms: this.store.find('form'),
+			contacts: this.store.find('contact'),
+			rosters: this.store.find('roster')
 		};
 	},
 	actions: {
@@ -17,11 +17,21 @@ export default Ember.Route.extend({
 		addNewForm: function(form){
 			this.store.createRecord('form', form);
 		},
-		addNewDoc: function(doc){
-			this.store.createRecord('document', doc);
+		addNewDoc: function(document){
+			var newDoc = this.store.createRecord('document', document);
+			newDoc.save().then(function(){
+				console.log("New document has been added");
+			}, function(){
+				console.log("Save Failed!!!");
+			});
 		},
 		addNewContact: function(contact){
-			this.store.createRecord('contact', contact);
+			var newContact = this.store.createRecord('contact', contact);
+			newContact.save().then(function(){
+				console.log("new contact added to system");
+			},function(){
+				console.log("Failed");
+			});
 		}
 	}
 });

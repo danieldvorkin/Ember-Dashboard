@@ -7,13 +7,13 @@
       	<div style="padding:12px; margin:0px; border-bottom:1px solid #cccccc;">My Content</div>
       	<div>
           {{dash-news news-property=news addNewAction='addNewNews'}}
-          {{dash-docs docs-property=documents addNewAction='addNewDoc'}}
+          {{dash-docs docs-property=model.documents addNewAction='addNewDoc'}}
       	</div>
       </div>
       
       <div class="cont50" style="vertical-align: top;">
         <div class="col-lg-6" style="background-color:white;">
-          {{dash-contacts contacts-property=contacts addNewAction='addNewContact'}}
+          {{dash-contacts contacts-property=model.contacts addNewAction='addNewContact'}}
         </div>
         <div class="col-lg-6" style="background-color:white;">
           {{dash-rosters rosters-property=rosters}}
