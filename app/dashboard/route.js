@@ -32,6 +32,14 @@ export default Ember.Route.extend({
 			},function(){
 				console.log("Failed");
 			});
+		},
+		addNewRoster: function(roster){
+			var newRoster = this.store.createRecord('roster', roster);
+			newRoster.save().then(function(){
+				console.log("new client added to system");
+			}, function(){
+				console.log("Failed Save!!!");
+			});
 		}
 	}
 });
