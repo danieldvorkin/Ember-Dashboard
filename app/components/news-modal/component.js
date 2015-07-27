@@ -4,7 +4,7 @@ export default Ember.Component.extend({
 	actions: {
 		submitNews: function(){
 			var news = {
-				date: this.get('date'),
+				date: new Date(),
 				content: this.get('content')
 			};
 			this.sendAction('compAction', news);

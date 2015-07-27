@@ -12,7 +12,12 @@ export default Ember.Route.extend({
 	},
 	actions: {
 		addNewNews: function(news){
-			this.store.createRecord('news', news);
+			var newNews = this.store.createRecord('news', news);
+			newNews.save().then(function(){
+				console.log("Save Successful");
+			}, function(){
+				console.log("Save Failed!!!");
+			});
 		},
 		addNewForm: function(form){
 			this.store.createRecord('form', form);
