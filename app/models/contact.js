@@ -11,49 +11,49 @@ Contact.reopenClass({
 		{
 			id: 1,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 2,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 3,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 4,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 5,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 6,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 7,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		},
 		{
 			id: 8,
 			name: "Daniel Dvorkin",
-			address: "22 Chopin Blvd",
+			address: "22 Chopin Blvd, Toronto",
 			phone: "(416) - 456 - 2903"
 		}
 	]

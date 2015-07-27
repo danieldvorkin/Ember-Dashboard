@@ -1,3 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js");
 @import url("http://code.jquery.com/jquery-2.1.0.js");
+
+.button-hover:hover {
+	opacity: .5;
+}
