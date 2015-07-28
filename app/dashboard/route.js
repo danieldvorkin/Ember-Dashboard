@@ -46,6 +46,11 @@ export default Ember.Route.extend({
 				console.log("Save Failed!!!");
 			});
 		},
+		deleteDoc: function(document){
+			document.deleteRecord();
+			document.save();
+		},
+
 		addNewContact: function(contact){
 			var newContact = this.store.createRecord('contact', contact);
 			newContact.save().then(function(){
