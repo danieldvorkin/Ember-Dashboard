@@ -7,6 +7,9 @@ export default Ember.Component.extend({
 	actions: {
 		compAddRoster: function(obj){
 			this.sendAction('addNewAction', obj);
+		},
+		compDelRoster: function(obj){
+			this.sendAction('addDeleteAction', obj);
 		}
 	}
 });

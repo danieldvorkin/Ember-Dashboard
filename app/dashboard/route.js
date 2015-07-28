@@ -54,6 +54,10 @@ export default Ember.Route.extend({
 			}, function(){
 				console.log("Failed Save!!!");
 			});
+		},
+		deleteRoster: function(roster){
+			roster.deleteRecord();
+			roster.save();
 		}
 	}
 });

@@ -3,8 +3,6 @@
     <div style="display:inline-block; vertical-align: top; text-transform: uppercase;"> Client Roster</div>
     <div style="display:inline-block;vertical-align:top;text-transform:uppercase;color:#1b73d5;float:right;">
       <a class="rosterModal" style="color:#1b73d5;font-size:85%;cursor:pointer;">Add New</a>
-      |  
-      <a href="#" style="color:#1b73d5; font-size:85%;"> Delete</a>
     </div>
   </div>
 </div>
@@ -20,6 +18,7 @@
         </div>
         <br>
         <div style="font-size:75%;">Email: {{roster.email}}</div>
+        <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelRoster' roster}}>Delete</a>
         <hr />
       {{/each}}
     </div>
