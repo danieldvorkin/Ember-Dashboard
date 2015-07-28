@@ -7,6 +7,9 @@ export default Ember.Component.extend({
 	actions: {
 		compAddContact: function(obj){
 			this.sendAction('addNewAction', obj);
+		},
+		compDelContact: function(obj){
+			this.sendAction('addDeleteAction', obj);
 		}
 	}
 });
