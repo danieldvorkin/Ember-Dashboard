@@ -52,7 +52,11 @@ module.exports = function(app) {
   });
 
   formsRouter.delete('/:id', function(req, res) {
-    res.status(204).end();
+    formDB.find({id: req.params.id}).exec(function(err, form){
+      formDB.remove({id: req.params.id}, function(err, numRemoved){
+        console.log(req.params.id + " has been removed");
+      })
+    });
   });
 
   app.use('/api/forms', formsRouter);

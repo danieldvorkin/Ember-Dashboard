@@ -51,7 +51,11 @@ module.exports = function(app) {
   });
 
   newsRouter.delete('/:id', function(req, res) {
-    res.status(204).end();
+    newsDB.find({id: req.params.id}).exec(function(err, news){
+      newsDB.remove({id: req.params.id}, function(err, numRemoved){
+        console.log(req.params.id + " has been removed");
+      })
+    });
   });
 
   app.use('/api/news', newsRouter);

@@ -52,7 +52,11 @@ module.exports = function(app) {
   });
 
   documentsRouter.delete('/:id', function(req, res) {
-    res.status(204).end();
+    documentDB.find({id: req.params.id}).exec(function(err, doc){
+      documentDB.remove({id: req.params.id}, function(err, numRemoved){
+        console.log(req.params.id + " has been removed");
+      })
+    });
   });
 
   app.use('/api/documents', documentsRouter);

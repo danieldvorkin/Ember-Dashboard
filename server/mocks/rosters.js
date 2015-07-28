@@ -51,7 +51,11 @@ module.exports = function(app) {
   });
 
   rostersRouter.delete('/:id', function(req, res) {
-    res.status(204).end();
+    rosterDB.find({id: req.params.id}).exec(function(err, roster){
+      rosterDB.remove({id: req.params.id}, function(err, numRemoved){
+        console.log(req.params.id + " has been removed");
+      })
+    });
   });
 
   app.use('/api/rosters', rostersRouter);
