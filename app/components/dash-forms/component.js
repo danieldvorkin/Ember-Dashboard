@@ -7,6 +7,9 @@ export default Ember.Component.extend({
 	actions: {
 		compAddForm: function(obj){
 			this.sendAction('addNewAction', obj);
+		},
+		compDelForm: function(obj){
+			this.sendAction('addDeleteAction', obj);
 		}
 	}
 });

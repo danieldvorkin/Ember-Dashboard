@@ -11,6 +11,7 @@ export default Ember.Route.extend({
 		};
 	},
 	actions: {
+		
 		addNewNews: function(news){
 			var newNews = this.store.createRecord('news', news);
 			newNews.save().then(function(){
@@ -23,6 +24,7 @@ export default Ember.Route.extend({
 			news.deleteRecord();
 			news.save();
 		},
+
 		addNewForm: function(form){
 			var newForm = this.store.createRecord('form', form);
 			newForm.save().then(function(){
@@ -31,6 +33,11 @@ export default Ember.Route.extend({
 				console.log("Save Failed!!!");
 			});
 		},
+		deleteForm: function(form){
+			form.deleteRecord();
+			form.save();
+		},
+
 		addNewDoc: function(document){
 			var newDoc = this.store.createRecord('document', document);
 			newDoc.save().then(function(){
