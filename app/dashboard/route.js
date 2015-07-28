@@ -19,6 +19,10 @@ export default Ember.Route.extend({
 				console.log("Save Failed!!!");
 			});
 		},
+		deleteNews: function(news){
+			news.deleteRecord();
+			news.save();
+		},
 		addNewForm: function(form){
 			var newForm = this.store.createRecord('form', form);
 			newForm.save().then(function(){

@@ -8,6 +8,9 @@ export default Ember.Component.extend({
 	actions: {
 		compAddNews: function(obj){
 			this.sendAction('addNewAction', obj);
+		},
+		compDelNews: function(obj){
+			this.sendAction('addDeleteAction', obj);
 		}
 	}
 });
