@@ -11,7 +11,10 @@
 			<strong>{{item.date}}</strong> 
 			<br>
 			{{item.content}} 
-			<a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelNews' item}}>Delete</a><hr />
+			<a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelNews' item}}>
+				<i class="fa fa-trash-o fa-lg"></i>	
+			</a>
+			<hr />
 		{{/each}}
 	</div>
 </div>

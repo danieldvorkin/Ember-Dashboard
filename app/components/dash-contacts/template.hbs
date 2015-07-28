@@ -15,7 +15,9 @@
     			<span style="font-size:80%;">
     				{{contact.address}}, <br>Phone: {{contact.phone}}
     			</span>
-          <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelContact' contact}}>Delete</a>
+          <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelContact' contact}}>
+            <i class="fa fa-trash-o fa-lg"></i>
+          </a>
     			<hr />
     		{{/each}}
     	</div>

@@ -13,7 +13,9 @@
   			</div>
 			</a>
 			<div style="display:inline-block;"> - {{doc.fileType}} - {{doc.fileSize}}MB</div>
-			<a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelDoc' doc}}>Delete</a>
+			<a style="color:#1b73d5;cursor:pointer;" {{action 'compDelDoc' doc}}>
+				<i class="fa fa-trash-o fa-lg"></i>
+			</a>
 			<br>
 		{{/each}}
 	</div>

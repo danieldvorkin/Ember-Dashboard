@@ -15,7 +15,9 @@
   		<div style="display:inline-block;">
   			{{form.details}}
   		</div>
-      <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelForm' form}}>Delete</a>
+      <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelForm' form}}>
+        <i class="fa fa-trash-o fa-2x"></i>
+      </a>
   		<hr />
 		{{/each}}
 	</div>
