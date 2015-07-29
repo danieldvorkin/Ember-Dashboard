@@ -2,11 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 	actions: {
-		submitDocument: function(){
+		fileLoaded: function(file){
+			console.log(file.filename, file.type, file.size, file.data);
+			var newSize = file.size / 1024;
 			var doc = {
-				fileName: this.get('fileName'),
-				fileType: this.get('fileType'),
-				fileSize: this.get('fileSize')
+				fileName: file.filename,
+				fileType: file.type,
+				fileSize: newSize,
+				link: file.data
 			};
 			this.sendAction('compAction', doc);
 		}
