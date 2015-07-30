@@ -7,16 +7,29 @@
 <div style="height:150px; overflow-y: auto;">
 	<div style="padding:6px; margin:10px;font-size:80%;">
 		{{#each componentDocs as |doc|}}
-			<a class="" target="_blank" href="{{doc.link}}" style="cursor:pointer;">
-  			<div style="display:inline-block; color:#1b73d5;">
-  				<strong>{{doc.fileName}}</strong> 
-  			</div>
-			</a>
-			<div style="display:inline-block;"> - {{doc.fileType}} - {{doc.fileSize}}KB</div>
-			<a style="color:#1b73d5;cursor:pointer;" {{action 'compDelDoc' doc}}>
-				<i class="fa fa-trash-o fa-lg"></i>
-			</a>
-			<br>
+			<div class="row">
+				<div class="col-lg-8">
+					<a class="" target="_blank" href="{{doc.link}}" style="cursor:pointer;">
+		  			<div style="display:inline-block; color:#1b73d5;">
+		  				<strong>{{doc.fileName}}</strong> 
+		  			</div>
+					</a>
+				</div>
+				
+				<div class="col-lg-2">
+					<div style="display:inline-block;"> {{doc.fileType}}  </div>
+				</div>
+				
+				<div class="col-lg-1">
+					{{doc.fileSize}}KB
+				</div>
+				<div class="col-lg-1">
+					<a style="color:#1b73d5;cursor:pointer;" {{action 'compDelDoc' doc}}>
+						<i class="fa fa-trash-o fa-lg"></i>
+					</a>
+				</div>
+			</div>
+			<hr/>
 		{{/each}}
 	</div>
 </div>
