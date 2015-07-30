@@ -7,7 +7,7 @@ export default Ember.Component.extend({
 			var newSize = file.size / 1024;
 			var formattedSize = Math.round(newSize);
 
-			if(formattedSize > 80){
+			if(formattedSize > 85){
 				alert("File is too big");
 			}
 			else {
