@@ -2,9 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 	actions: {
-		formSubmission: function(){
+		fileLoaded: function(file){
+			console.log(file.filename, this.get('details'));
 			var form = {
-				title: this.get('title'),
+				title: file.filename,
 				details: this.get('details')
 			};
 			this.sendAction('compAction', form);

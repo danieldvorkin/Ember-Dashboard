@@ -12,17 +12,16 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="title">Title</label>
-              {{input class="form-control" placeholder="Form Title" value=title}}
-            </div>
-            <div class="form-group">
               <label for="details">Details</label>
               {{textarea cols="80" rows="6" class="form-control" placeholder="Enter Details" value=details}}
             </div>
+            {{#file-picker fileLoaded="fileLoaded" preview=false accept=".pdf,.jpg,.png" readAs="readAsDataURL"}}
+              <span style="cursor:pointer;">Drag here or click to upload a file</span>
+            {{/file-picker}}
           </form>
         </div>
         <div class="modal-footer">
-          <button type="submit" {{action 'formSubmission'}} class="btn btn-primary" data-dismiss="modal">
+          <button type="submit" {{action 'fileLoaded'}} class="btn btn-primary" data-dismiss="modal">
             Submit
           </button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
