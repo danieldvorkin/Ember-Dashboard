@@ -6,7 +6,8 @@ export default Ember.Component.extend({
 			console.log(file.filename, this.get('details'));
 			var form = {
 				title: file.filename,
-				details: this.get('details')
+				details: this.get('details'),
+				link: file.data
 			};
 			this.sendAction('compAction', form);
 		}

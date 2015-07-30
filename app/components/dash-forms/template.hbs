@@ -6,20 +6,31 @@
 </div>
 <div style="height:200px; overflow-y: auto;">
 	<div style="padding:6px; margin:10px;font-size:75%;">
-		{{#each componentForms as |form|}}
-  		<a href="#">
-  			<div style="display:inline-block; vertical-align: top; color:#1b73d5;">
-  				<strong>{{form.title}}</strong>
-  			</div>
-  		</a>
-  		<div style="display:inline-block;">
-  			{{form.details}}
-  		</div>
-      <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelForm' form}}>
-        <i class="fa fa-trash-o fa-2x"></i>
-      </a>
-  		<hr />
-		{{/each}}
+    <div class="row">
+  		{{#each componentForms as |form|}}
+        <div class="col-lg-10">
+      		<a href="{{form.link}}" target="_blank">
+      			<div style="display:inline-block; vertical-align: top; color:#1b73d5;">
+      				<strong>{{form.title}}</strong>
+      			</div>
+      		</a>
+        </div>
+        <div class="col-lg-2">
+          <a style="color:#1b73d5;float:right;cursor:pointer;" {{action 'compDelForm' form}}>
+            <i class="fa fa-trash-o fa-lg"></i>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+        		<div style="display:inline-block;">
+        			{{form.details}}
+        		</div>
+          </div>
+        </div>
+    		<hr />
+  		{{/each}}
+    </div>
 	</div>
 </div>
 
