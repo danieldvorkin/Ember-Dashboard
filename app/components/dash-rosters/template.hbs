@@ -12,9 +12,15 @@
       {{#each componentRosters as |roster|}}
         <strong>{{roster.name}}</strong>
         <div style="float:right; display:inline-block;">
-          <a href="#" style="margin-top:10px;"><img src="assets/images/con_ic_email.png"></a>
-          <a href="#" style="margin-top:10px;"><img src="assets/images/con_ic_call.png"></a>
-          <a href="#" style="margin-top:10px;"><img src="assets/images/con_ic_videoconf.png"></a>
+          <a href="#" style="margin-top:10px;" class="button-hover">
+            <img src="assets/images/con_ic_email.png">
+          </a>
+          <a href="#" style="margin-top:10px;" class="button-hover">
+            <img src="assets/images/con_ic_call.png">
+          </a>
+          <a href="#" style="margin-top:10px;" class="button-hover">
+            <img src="assets/images/con_ic_videoconf.png">
+          </a>
         </div>
         <br>
         <div style="font-size:75%;">Email: {{roster.email}}</div>
