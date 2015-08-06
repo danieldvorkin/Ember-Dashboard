@@ -65,10 +65,30 @@
       </div>
     </a>
   
-    <a href="#" class="button-hover">  
+    <a class="button-hover">  
       <div class="auto-style1" style="display:inline-block; position:relative;">
         <img height="38" src="assets/images/icons_setting.png" width="38" style="margin-top:18px;">
+
+      </div>
+    </a>
+    <a class="button-hover newsModal">  
+      <div class="auto-style1" style="display:inline-block; position:relative;top:20px;">
+        {{!-- <img height="38" src="assets/images/icons_setting.png" width="38" style="margin-top:18px;"> --}}
+        <i class="fa fa-plus fa-3x" style="margin-top:18px;"></i>        
       </div>
     </a>
   </div>
 </div>
+
+{{news-modal compAction='compAddNews'}}
+
+
+<script>
+  $(document).ready(function(){
+    $(".newsModal").click(function(){
+        $("#newsModal").modal({backdrop: 'static'});
+    });
+  });
+</script>
+
+
