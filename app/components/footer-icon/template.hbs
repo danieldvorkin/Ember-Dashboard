@@ -1,8 +1,10 @@
-<div class="col-lg-1">
-	<a href=link target="_blank" class="button-hover">
+<div class="col-lg-1 col-md-1 col-xs-1">
+	<a href={{link}} target="_blank" class="button-hover">
 	  <div class="auto-style1" style="display:inline-block; position:relative;">
-	    <img height="38" src=img width="38" style="margin-top:18px;">
-	    <div class="circleIconNo ">1</div>
+	    <img height="38" src={{img}} width="38" style="margin-top:18px;">
+	    {{#if notificationCount}}
+	    	<div class="circleIconNo ">{{notifications}}</div>
+	    {{/if}}
 	  </div>
 	</a>
 </div>
