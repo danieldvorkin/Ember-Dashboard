@@ -5,3 +5,7 @@
 .button-hover:hover {
 	opacity: .5;
 }
+
+.footer-section {
+	display: inline-block;
+}
