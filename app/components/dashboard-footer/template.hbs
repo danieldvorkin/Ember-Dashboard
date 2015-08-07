@@ -35,7 +35,7 @@
       {{/each}}
       
       <div class="footer-section" style="top:">
-        <a target="_blank" class="button-hover newsModal" style="cursor: pointer;">
+        <a target="_blank" class="button-hover footerModal" style="cursor: pointer;">
           <div class="auto-style1" style="display:inline-block; position:relative;top:22px;">
             <i class="fa fa-plus fa-3x" style="margin-top:18px;"></i>
           </div>
@@ -46,14 +46,14 @@
   </div>
 </div>
 
-{{news-modal compAction='compAddNews'}}
+{{modal-footer}}
 
 
 <script>
   $(document).ready(function(){
     
-    $(".newsModal").click(function(){
-        $("#newsModal").modal({backdrop: 'static'});
+    $(".footerModal").click(function(){
+        $("#footerModal").modal({backdrop: 'static'});
     });
     $('.show-feature').hide();
   });

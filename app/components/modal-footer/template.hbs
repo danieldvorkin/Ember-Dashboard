@@ -1,0 +1,32 @@
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="footerModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+ 
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Dock Item</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="details">Details</label>
+              {{textarea cols="80" rows="6" class="form-control" placeholder="Enter Details" value=details}}
+            </div>
+            {{#file-picker fileLoaded="fileLoaded" preview=false accept=".pdf,.jpg,.png" readAs="readAsDataURL"}}
+              <span style="cursor:pointer;">Drag here or click to upload a file</span>
+            {{/file-picker}}
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" {{action 'fileLoaded'}} class="btn btn-primary" data-dismiss="modal">
+            Submit
+          </button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
