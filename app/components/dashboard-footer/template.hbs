@@ -1,11 +1,11 @@
 <style>
-@media screen and (min-width: 680px){
+/*@media screen and (min-width: 680px){
   .hide-button, .show-button{
     display: none;
     visibility: hidden;
   }
 }
-
+*/
 </style>
 
 <div class="hiding-footer" style="opacity: 1%;text-align: center; vertical-align: middle;">
@@ -13,8 +13,19 @@
     <div class="row">
       <div class="col-lg-11"></div>
       <div class="col-lg-1">
-        <a class="hide-feature"><div class="hide-button"><i class="fa fa-minus"></i></div></a>
-        <a class="show-feature"><div class="show-button"><i class="fa fa-plus"></i></div></a>
+        
+        <a class="hide-feature">
+          <div class="hide-button">
+            <i class="fa fa-arrow-down"></i>
+          </div>
+        </a>
+        
+        <a class="show-feature">
+          <div class="show-button">
+            <i class="fa fa-arrow-up"></i>
+          </div>
+        </a>
+
       </div>
     </div>
     <div class="row" id="footer-hide">
@@ -46,17 +57,12 @@
     });
 
     $('.hide-feature').on('click', function(){
-      $('#footer-hide').animate({
-        height: 0,
-        opacity: 0
-      }, 1000);
+      $('#footer-hide').hide().slideUp(3000);
+      //$('.fa-arrow-down').toggleClass('fa-arrow-down fa-arrow-up');
     });
 
     $('.show-feature').on('click', function(){
-      $('#footer-hide').animate({
-        height: 260,
-        opacity: 1
-      }, 1000);
+      $('#footer-hide').show().slideDown(3000);
     });
 
   });
