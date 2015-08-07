@@ -1,20 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	actions: {
-		pressed: function(){
-	    $('.hide-feature').on('click', function(){
-	      $('#footer-hide').slideUp(800);
-	      $('.hide-feature').hide();
-	      $('.show-feature').show();
-	    });
+	didInsertElement: function(){
+		$('.hide-feature').on('click', function(){
+	    $('#footer-hide').slideUp(800);
+	    $('.hide-feature').hide();
+	    $('.show-feature').show();
+	  });
 
-	    $('.show-feature').on('click', function(){
-	      $('#footer-hide').slideDown(800);
-	      $('.show-feature').hide();
-	      $('.hide-feature').show();
-	    });
-		}
+	  $('.show-feature').on('click', function(){
+	    $('#footer-hide').slideDown(800);
+	    $('.show-feature').hide();
+	    $('.hide-feature').show();
+	  });
 	},
 	icons: (function() {
 		return [
@@ -30,12 +28,12 @@ export default Ember.Component.extend({
 			},
 			{
 				link: '#',
-				img: 'assets/images/icons_emr.png',
+				img: 'assets/images/icons_phone.png',
 				notifications: 3
 			},
 			{
 				link: '#',
-				img: 'assets/images/icons_phone.png',
+				img: 'assets/images/icons_emr.png',
 				notifications: 4
 			},
 			{
