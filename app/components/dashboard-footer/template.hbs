@@ -14,13 +14,13 @@
       <div class="col-lg-11"></div>
       <div class="col-lg-1">
         
-        <a class="hide-feature">
+        <a class="hide-feature" >
           <div class="hide-button">
             <i class="fa fa-arrow-down"></i>
           </div>
         </a>
         
-        <a class="show-feature">
+        <a class="show-feature" {{action "pressed"}}>
           <div class="show-button">
             <i class="fa fa-arrow-up"></i>
           </div>
@@ -56,19 +56,19 @@
         $("#newsModal").modal({backdrop: 'static'});
     });
 
-    $('.show-feature').hide();
-    
-    $('.hide-feature').on('click', function(){
-      $('#footer-hide').slideUp(800);
-      $('.hide-feature').hide();
-      $('.show-feature').show();
-    });
+    //$('.show-feature').hide();
 
-    $('.show-feature').on('click', function(){
-      $('#footer-hide').slideDown(800);
-      $('.show-feature').hide();
-      $('.hide-feature').show();
-    });
+    // $('.hide-feature').on('click', function(){
+    //   $('#footer-hide').slideUp(800);
+    //   $('.hide-feature').hide();
+    //   $('.show-feature').show();
+    // });
+
+    // $('.show-feature').on('click', function(){
+    //   $('#footer-hide').slideDown(800);
+    //   $('.show-feature').hide();
+    //   $('.hide-feature').show();
+    // });
 
   });
 </script>

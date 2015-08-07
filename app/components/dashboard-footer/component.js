@@ -1,6 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+	actions: {
+		pressed: function(){
+			// $('.show-feature').hide();
+    
+	    $('.hide-feature').on('click', function(){
+	      $('#footer-hide').slideUp(800);
+	      $('.hide-feature').hide();
+	      $('.show-feature').show();
+	    });
+
+	    $('.show-feature').on('click', function(){
+	      $('#footer-hide').slideDown(800);
+	      $('.show-feature').hide();
+	      $('.hide-feature').show();
+	    });
+		}
+	},
 	icons: (function() {
 		return [
 			{
