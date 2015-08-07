@@ -1,5 +1,5 @@
 <div>
-	<a href={{link}} target="_blank" class="button-hover">
+	<a href={{link}} target="_blank" data-toggle="tooltip" data-placement="left" title="{{name}}" class="button-hover">
 	  <div class="auto-style1" style="display:inline-block; position:relative;">
 	    <img height="38" src={{img}} width="38" style="margin-top:18px;">
 	    {{#if notificationCount}}
@@ -8,3 +8,11 @@
 	  </div>
 	</a>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		});
+	});
+</script>
