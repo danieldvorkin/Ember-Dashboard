@@ -1,18 +1,12 @@
 <div>
-	<a href={{link}} target="_blank" data-toggle="tooltip" data-placement="left" title="{{name}}" class="button-hover">
-	  <div class="auto-style1" style="display:inline-block; position:relative;">
-	    <img height="38" src={{img}} width="38" style="margin-top:18px;">
-	    {{#if notificationCount}}
-	    	<div class="circleIconNo ">{{notifications}}</div>
-	    {{/if}}
-	  </div>
-	</a>
+	<span class="hint--top" data-hint="Tooltip using hint.css">
+		<a href={{link}} target="_blank" class="button-hover">
+		  <div class="auto-style1" style="display:inline-block; position:relative;">
+		    <img height="38" src={{img}} width="38" style="margin-top:18px;">
+		    {{#if notificationCount}}
+		    	<div class="circleIconNo ">{{notifications}}</div>
+		    {{/if}}
+		  </div>
+		</a>
+	</span>
 </div>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(function () {
-		  $('[data-toggle="tooltip"]').tooltip()
-		});
-	});
-</script>
